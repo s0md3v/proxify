@@ -19,6 +19,10 @@ To get 1 proxy you can simply do this:
 import proxify
 proxy = proxify.one()
 ```
+Output:
+```
+http://103.74.244.199:8080
+```
 <hr />
 
 To get many proxies, do this:
@@ -26,12 +30,26 @@ To get many proxies, do this:
 import proxify
 proxy = proxify.many()
 ```
+Output:
+```
+[u'http://47.88.32.46:3128', u'http://47.52.222.165:80', u'http://37.59.47.13:3128',
+u'http://67.63.33.7:80', u'http://51.15.35.239:3128', u'http://185.82.212.95:8080',
+u'http://151.80.140.233:54566', u'http://27.254.200.55:80', u'http://173.212.228.42:10059',
+u'http://115.84.178.73:6666', u'http://47.88.242.10:80'
+.....
+u'http://54.207.104.166:8080']
+```
 <hr />
 
 To dump a specific number of proxies, lets say '5'. You can do this:
 ``` python
 import proxify
 proxy = proxify.get(5)
+```
+Output:
+```
+[u'http://47.88.32.46:3128', u'http://47.52.222.165:80', u'http://37.59.47.13:3128',
+u'http://67.63.33.7:80', u'http://51.15.35.239:3128']
 ```
 
 ### Note
