@@ -6,7 +6,7 @@ Proxify is a python module for dumping usable proxies.
 
 ## Documentation
 
-The proxies returned by <b>proxify</b>are in following format:
+The proxies returned by <b>proxify</b> are in following format:
 ```
 protocol://ip_address:port
 ```
@@ -14,7 +14,7 @@ For example,
 ```
 http://127.0.0.1:8080
 ```
-To get 1 proxy you can simple do this:
+To get 1 proxy you can simply do this:
 ``` python
 import proxify
 proxy = proxify.one()
@@ -33,7 +33,7 @@ To dump a specific number of proxies, lets say '5'. You can do this:
 import proxify
 proxy = proxify.get(5)
 ```
-<hr />
 
-<b>Note:</b> The many() function dumps 300 proxies which is also the maximum number of proxies you can dump with get() function. If you specify a number large than 300, it will automatically become 300.<br>
+### Note
+The many() function dumps 300 proxies which is also the maximum number of proxies you can dump with get() function. If you specify a number large than 300, it will automatically become 300.<br>
 The one() function returns a string while many() and get() return a list.
