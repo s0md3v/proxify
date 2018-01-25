@@ -19,7 +19,7 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
     ],
-    keywords='proxify',
+    keywords='proxify urltimate hackers somdev',
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     install_requires=['requests'],
     python_requires='>=2, <=2.8',
