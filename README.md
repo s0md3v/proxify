@@ -2,7 +2,11 @@
 
 <img src='https://i.imgur.com/AidfpCt.png' />
 
-Proxify is a python module for dumping usable proxies.
+Proxify is a python module for dumping usable proxies.</br>
+It supports both python2 and python3 and can be install via pip as follows.
+```
+pip install proxify
+```
 
 ## Documentation
 
@@ -55,3 +59,11 @@ u'http://67.63.33.7:80', u'http://51.15.35.239:3128']
 ### Note
 The many() function dumps 300 proxies which is also the maximum number of proxies you can dump with get() function. If you specify a number large than 300, it will automatically become 300.<br>
 The one() function returns a string while many() and get() return a list.
+
+#### Dependencies
+- requests
+- re
+- random
+
+
+Made with ![heart](https://cloud.githubusercontent.com/assets/4301109/16754758/82e3a63c-4813-11e6-9430-6015d98aeaab.png) by <a href=https://twitter.com/s0md3v>Somdev Sangwan</a>
