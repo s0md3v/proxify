@@ -1,6 +1,5 @@
-import requests
+from urllib.request import urlopen, Request
 import re
-import random
 
 
 def list2dict(x):
@@ -43,9 +42,9 @@ def make_request() -> list:
         'Content-Type': 'text/html; charset=utf-8',
     }
 
-    response = requests.get(  # getting the response
-        'https://free-proxy-list.net/',
-        headers=headers).text
+    request = Request("https://free-proxy-list.net/", headers=headers)
+
+    response = urlopen(request).read().decode()
 
     # scraping all the tuples
     return list(  # converting to list
@@ -119,6 +118,3 @@ def fetch(count=300, **kwargs) -> list:
 
     # returning sliced list
     return list(data)[:count]
-
-
-fetch
